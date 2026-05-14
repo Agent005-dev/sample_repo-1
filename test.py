@@ -1,9 +1,12 @@
-print('hello world')
-a = ['mahmud', 2, 2, 'semed', 4, 'hesenli', 6, 8]
-counter = 0
+people = [
+    {'name': 'Alice', 'age': 30, 'city': 'New York'},
+    {'name': 'Bob', 'age': 22, 'city': 'San Francisco'},
+    {'name': 'Charlie', 'age': 35, 'city': 'Los Angeles'}
+]
 
-print('python)')
-for i in a:
-    if i == 2:
-        pass
-        
+for i in people:
+    if i['age'] > 25:
+        print(i['name'])
+
+sorted_d = sorted(people, key= lambda people : people['age'], reverse =True)  
+print(sorted_d)

@@ -1,13 +1,8 @@
+n = input().split()
+n.sort()
 
-a = int(input())
-say = 0
-if a != 1:
-     for i in range(2,a//2+1):
-       if a % i == 0:
-            say+=1
-if say == 0:
-             print('sadedir')
+if len(n) % 2 == 0:
+      
+      print(n[len(n)//2-1], n[len(n//2)], end='')
 else:
-           print('sade deyil ')
-    
-    
+    print(n[len(n) // 2])
